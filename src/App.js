@@ -3,14 +3,14 @@ import './App.css';
 
 function App() {
 	function requestInfo() {
-		var localUrl = "http://localhost:7071/api/FinalProject1"
-		//var prodUrl = "https://gk-app-prog-lang-final.azurewebsites.net/api/getSocialMediaData?code=P2qWdJ5F0E921b6PFxyTRkcCoGiISWVuRPEpMNHLnki2i9HfaXkR5Q=="
+		//var localUrl = "http://localhost:7071/api/FinalProject1"
+		var prodUrl = "https://gk-app-prog-lang-final.azurewebsites.net/api/getSocialMediaData?code=P2qWdJ5F0E921b6PFxyTRkcCoGiISWVuRPEpMNHLnki2i9HfaXkR5Q=="
 
 		var platform = document.getElementById ("platform").value;
 		var hashtag = document.getElementById ("hashtag").value;
 		var tz = document.getElementById ("timezone").value;
-		var url = localUrl + "?plat=" + platform + "&hash=" + hashtag + "&time=" + tz
-		//var url = prodUrl + "?plat=" + platform + "&hash=" + hashtag + "&time=" + tz
+		//var url = localUrl + "?plat=" + platform + "&hash=" + hashtag + "&time=" + tz
+		var url = prodUrl + "?plat=" + platform + "&hash=" + hashtag + "&time=" + tz
 		//var url = prodUrl
 		fetch(url)
 			.then(res => {
