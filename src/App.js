@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
 	function requestInfo() {
-		var localUrl = "http://localhost:7071/api/FinalProject1"
+		var localUrl = "http://localhost:7071/api/finalProjectMVRC"
 		//var prodUrl = "https://gk-app-prog-lang-final.azurewebsites.net/api/getSocialMediaData?code=P2qWdJ5F0E921b6PFxyTRkcCoGiISWVuRPEpMNHLnki2i9HfaXkR5Q=="
 
 		var platform = document.getElementById ("platform").value;
